@@ -1,0 +1,54 @@
+@charset "utf-8";
+header, main, nav, section, article, footer{
+    padding: 10px;
+    border: 1px solid grey;
+
+}
+
+article{
+    background-color: aliceblue;
+}
+article header{
+    background-color: rgb(78, 13, 13);
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: flex-end;
+}
+section>article{
+    flex: 1 1 200;
+    
+
+}
+section>article :nth-child(){
+    background-color:rgb(93, 140, 182);
+    order: 16;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+nav ul{
+    list-style: none;
+    padding: 0px;
+}
+#listaval #menu {
+    display: flex;
+}
+#listaval #divekkel{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:600px){
+    section{
+        flex-direction: column;
+    }
+
+}
